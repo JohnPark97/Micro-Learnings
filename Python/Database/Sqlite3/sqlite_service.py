@@ -6,14 +6,14 @@ class SqliteService:
         self.db_name = db_name
 
         db_dir_path = os.path.dirname(os.path.realpath(__file__)) + "/Db files"
-        db_path = db_dir_path + "/{db_name}.db"
+        db_path = db_dir_path + f"/{db_name}.db"
 
         self.conn = sqlite3.connect(db_path)
         self.cursor = self.conn.cursor()
 
     def create_table(self, table_name, columns):
         columns_str = ", ".join(columns)
-        query = f"CREATE TABLE {table_name} ({columns_str})"
+        query = f"CREATE TABLE IF NOT EXISTS {table_name} ({columns_str})"
         self.cursor.execute(query)
         self.conn.commit()
 

@@ -1,0 +1,11 @@
+{
+    "name": "Python: pytest",
+    "type": "python",
+    "request": "launch",
+    "program": "${workspaceFolder}/tests",
+    "args": [
+      "-v"
+    ],
+    "justMyCode": true
+  }
+  
