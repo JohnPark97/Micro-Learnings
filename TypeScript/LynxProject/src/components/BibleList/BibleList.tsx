@@ -13,14 +13,18 @@ export function BibleList() {
 
     return(
         <view className="Container">
-            <scroll-view
-            scroll-orientation="vertical"
-            style={scrollStyle}
+            <list
+                list-type="flow"
+                scroll-orientation="vertical"
+                span-count={2}
+                style={scrollStyle}
             >
-            {books.map((book) => (
-               <BibleCard {...bibleBooks[book]}></BibleCard> 
+            {books.map((book, index) => (
+                <list-item item-key={"" + index}>
+                    <BibleCard {...bibleBooks[book]}></BibleCard> 
+                </list-item>
             ))}
-            </scroll-view>
+            </list>
         </view>
     )
 }
