@@ -1,19 +1,10 @@
 /* Card Container */
 .Card {
-    background-color: #ff7575; /* White background */
     border-radius: 12px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 16px; /* Inner spacing */
-    margin: 12px 0; /* Spacing between cards */
-    border: 1px solid #e0e0e0; /* Subtle border */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    margin: 3px 0; /* Spacing between cards */
     cursor: pointer; /* Indicates interactivity */ 
-}
-
-/* Hover Effect */
-.Card:hover {
-    transform: translateY(-4px); /* Slight lift */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 /* Responsive Design */

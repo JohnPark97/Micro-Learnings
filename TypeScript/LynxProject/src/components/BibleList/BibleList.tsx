@@ -17,7 +17,9 @@ export function BibleList() {
             scroll-orientation="vertical"
             style={scrollStyle}
             >
-            {Array.from({ length: 300 }).map((item, index) => <BibleCard {...bibleBooks[books[index]]}></BibleCard>)}
+            {books.map((book) => (
+               <BibleCard {...bibleBooks[book]}></BibleCard> 
+            ))}
             </scroll-view>
         </view>
     )
