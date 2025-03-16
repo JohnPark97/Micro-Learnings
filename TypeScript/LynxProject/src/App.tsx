@@ -1,14 +1,15 @@
 import './App.css'
-import { useEffect, useState } from '@lynx-js/react'
-import { CardType } from './components/Card/Card.jsx'
-import { CardBox } from './components/CardBox/CardBox.jsx'
+import { useEffect } from '@lynx-js/react'
+import { BibleList } from './components/BibleList/BibleList.jsx'
 
 export function App() {
-  useEffect(() => {}, [])
+  // Dynamically set the viewport meta tag
+  useEffect(() => {}, []);
 
   return (
     <view className='App'>
-      <CardBox/>
+        <BibleList></BibleList>
     </view>
   )
 }
+

@@ -1,0 +1,33 @@
+/* Card Container */
+.Card {
+    background-color: #ff7575; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 16px; /* Inner spacing */
+    margin: 12px 0; /* Spacing between cards */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    cursor: pointer; /* Indicates interactivity */ 
+}
+
+/* Hover Effect */
+.Card:hover {
+    transform: translateY(-4px); /* Slight lift */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Card {
+        padding: 12px; /* Smaller padding on mobile */
+        margin: 8px 0; /* Smaller margin on mobile */
+    }
+
+    .Card-header {
+        font-size: 1.1rem; /* Smaller header on mobile */
+    }
+
+    .Card-content {
+        font-size: 0.85rem; /* Smaller content on mobile */
+    }
+}
