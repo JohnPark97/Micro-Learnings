@@ -7,9 +7,9 @@ export function App() {
   useEffect(() => {}, []);
 
   return (
-    <view className='App'>
-        <BibleList></BibleList>
-    </view>
+      <view className='App'>
+          <BibleList />
+      </view>
   )
 }
 

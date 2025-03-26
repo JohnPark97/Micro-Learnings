@@ -21,7 +21,7 @@ export function BibleList() {
             >
             {books.map((book, index) => (
                 <list-item item-key={"" + index}>
-                    <BibleCard {...bibleBooks[book]}></BibleCard> 
+                    <BibleCard { ...{ key: book }}></BibleCard> 
                 </list-item>
             ))}
             </list>

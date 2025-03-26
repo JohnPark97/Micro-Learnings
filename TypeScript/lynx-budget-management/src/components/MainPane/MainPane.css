@@ -1,0 +1,14 @@
+.MainPane {
+    margin: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+    /* Fill viewport */
+    width: 100vw;
+    min-height: 100vh;
+  
+    /* Include padding in dimensions */
+    box-sizing: border-box;
+  
+    /* Flex layout (optional) */
+    display: flex;
+    flex-direction: column;
+  }
